@@ -1,0 +1,53 @@
+/* 1. Center everything on the screen */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f7fb;
+}
+
+/* 2. Container Card Styling */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* 3. Like Button Styling */
+.like-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #cbd5e1;
+  border-radius: 30px;
+  background-color: white;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.like-btn:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* 4. The Active Blue State (Toggled by JS) */
+.like-btn.liked {
+  background-color: #e0f2fe;
+  border-color: #0284c7;
+  color: #0284c7;
+}
